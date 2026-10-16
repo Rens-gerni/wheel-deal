@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheel Deal - Sign Up</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.svg" alt="Logo" width="150">
+            <h3>HOT WHEELS COLLECTOR COMMUNITY</h3>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="signup-section">
+
+            <div class="auth-tabs">
+                <a href="index.html" style="flex: 1;">
+                    <button style="width: 100%; padding: 10px; font-size: 0.85rem; background: transparent; color: var(--text-muted); border: none; border-radius: var(--radius); font-family: 'Rajdhani', sans-serif; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;">Sign In</button>
+                </a>
+                <button style="flex: 1; padding: 10px; font-size: 0.85rem; background: var(--red); color: white; border: none; border-radius: var(--radius); font-family: 'Rajdhani', sans-serif; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;">Create Account</button>
+            </div>
+
+            <form id="signup-form">
+
+                <div class="row g-3 mb-4">
+                    <div class="col-md-6">
+                        <div class="form-group mb-0">
+                            <label for="signup-firstname">First Name</label>
+                            <input
+                                id="signup-firstname"
+                                type="text"
+                                placeholder="John"
+                                required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group mb-0">
+                            <label for="signup-lastname">Last Name</label>
+                            <input
+                                id="signup-lastname"
+                                type="text"
+                                placeholder="Doe"
+                                required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="signup-email">Email Address</label>
+                    <input
+                        id="signup-email"
+                        type="email"
+                        placeholder="you@example.com"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="signup-username">Username</label>
+                    <input
+                        id="signup-username"
+                        type="text"
+                        placeholder="yourusername"
+                        required>
+                </div>
+
+                <div class="row g-3 mb-4">
+                    <div class="col-md-6">
+                        <div class="form-group mb-0">
+                            <label for="signup-password">Password</label>
+                            <input
+                                id="signup-password"
+                                type="password"
+                                placeholder="********"
+                                required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group mb-0">
+                            <label for="signup-confirm-password">Confirm Password</label>
+                            <input
+                                id="signup-confirm-password"
+                                type="password"
+                                placeholder="********"
+                                required>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit">
+                    Join the Community
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>

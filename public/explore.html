@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheel Deal - Explore</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+
+        <div class="logo">
+            <h1>Wheel Deal</h1>
+        </div>
+
+        <nav>
+            <a href="feed.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="restocks.html">Restocks</a>
+            <div class="dropdown" id="nav-profile">
+                <!-- Profile dropdown will be inserted here by JavaScript -->
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="hero">
+
+            <h1>Discover Rare Finds</h1>
+
+            <p>
+                Explore legendary castings, rare treasure hunts,
+                and collector favorites from around the world.
+            </p>
+
+        </section>
+
+        <section class="search-section">
+
+            <input
+                type="text"
+                placeholder="Search Hot Wheels...">
+
+            <button>Search</button>
+
+        </section>
+
+        <section class="featured-collections">
+
+            <h2>Featured Collections</h2>
+
+            <div class="collection-grid">
+
+                <article class="car-card">
+
+                    <img src="images/car1.svg"
+                         alt="Nissan Skyline GT-R"
+                         width="250">
+
+                    <h3>Nissan Skyline GT-R</h3>
+
+                    <p>Super Treasure Hunt Edition</p>
+
+                </article>
+
+                <article class="car-card">
+
+                    <img src="images/car2.svg"
+                         alt="Ford Mustang Boss"
+                         width="250">
+
+                    <h3>Ford Mustang Boss</h3>
+
+                    <p>Collector Favorite</p>
+
+                </article>
+
+                <article class="car-card">
+
+                    <img src="images/car3.svg"
+                         alt="Lamborghini Huracan"
+                         width="250">
+
+                    <h3>Lamborghini Huracan</h3>
+
+                    <p>Premium Series</p>
+
+                </article>
+
+                <article class="car-card">
+
+                    <img src="images/car4.svg"
+                         alt="Dodge Charger"
+                         width="250">
+
+                    <h3>Dodge Charger</h3>
+
+                    <p>Rare Collector Edition</p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="popular-categories">
+
+            <h2>Popular Categories</h2>
+
+            <ul>
+                <li>Super Treasure Hunts</li>
+                <li>Treasure Hunts</li>
+                <li>Premium Series</li>
+                <li>Vintage Castings</li>
+                <li>Movie Cars</li>
+                <li>Custom Builds</li>
+            </ul>
+
+        </section>
+
+        <section class="collector-picks">
+
+            <h2>Collector Picks</h2>
+
+            <article>
+
+                <h3>2024 STH Nissan GT-R</h3>
+
+                <p>
+                    One of the most sought-after releases
+                    this year among collectors.
+                </p>
+
+            </article>
+
+            <article>
+
+                <h3>Fast & Furious Skyline</h3>
+
+                <p>
+                    Highly valued movie-themed casting
+                    with growing demand.
+                </p>
+
+            </article>
+
+            <article>
+
+                <h3>RLC Exclusive Camaro</h3>
+
+                <p>
+                    Limited edition release available
+                    only to select collectors.
+                </p>
+
+            </article>
+
+        </section>
+
+        <section class="community-build-posts" style="margin-top:48px;">
+            <h2>Community Builds</h2>
+            <div id="community-build-posts"></div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            © 2026 Wheel Deal Community
+        </p>
+
+    </footer>
+
+    <!-- Delete Post Modal -->
+    <div class="modal fade" id="deletePostModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" style="background:var(--bg-card);border:1px solid var(--border);">
+          <div class="modal-header" style="border-bottom:1px solid var(--border);">
+            <h5 class="modal-title" style="color:var(--text-white);">Delete Post</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" style="color:var(--text-muted);">
+            Are you sure you want to delete this post? This action cannot be undone.
+          </div>
+          <div class="modal-footer" style="border-top:1px solid var(--border);">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background:var(--bg-card2);border:1px solid var(--border);color:var(--text-muted);">Cancel</button>
+            <button type="button" class="btn btn-danger" id="confirm-delete-btn" style="background:var(--red);border:none;">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>

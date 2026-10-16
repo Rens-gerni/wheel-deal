@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheel Deal - Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+
+        <div class="logo">
+            <h1>Wheel Deal</h1>
+        </div>
+
+        <nav>
+            <a href="feed.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="restocks.html">Restocks</a>
+            <div class="dropdown" id="nav-profile">
+                <!-- Profile dropdown will be inserted here by JavaScript -->
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="profile-banner">
+            <div id="profile-banner-content">
+                <!-- Profile content will be inserted here by JavaScript -->
+            </div>
+        </section>
+
+        <section class="profile-stats">
+
+            <h2>Collector Statistics</h2>
+
+            <div class="stats-grid" id="user-stats">
+                <!-- Stats will be inserted here by JavaScript -->
+            </div>
+
+        </section>
+
+        <section class="collection-gallery">
+
+            <h2>My Collection</h2>
+
+            <div class="gallery-grid">
+
+                <article class="car-card">
+                    <img src="images/car1.svg" alt="Car 1" width="200">
+                    <h3>Nissan Skyline GT-R</h3>
+                </article>
+
+                <article class="car-card">
+                    <img src="images/car2.svg" alt="Car 2" width="200">
+                    <h3>Ford Mustang Boss</h3>
+                </article>
+
+                <article class="car-card">
+                    <img src="images/car3.svg" alt="Car 3" width="200">
+                    <h3>Lamborghini Huracan</h3>
+                </article>
+
+                <article class="car-card">
+                    <img src="images/car4.svg" alt="Car 4" width="200">
+                    <h3>Dodge Charger</h3>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="recent-posts" style="margin-bottom:48px;">
+            <h2>Recent Posts</h2>
+            <div id="profile-recent-posts"></div>
+        </section>
+
+        <section class="achievements">
+
+            <h2>Achievements</h2>
+
+            <ul>
+                <li>🏆 First Treasure Hunt Found</li>
+                <li>🚗 100 Cars Collected</li>
+                <li>🔥 Top Community Contributor</li>
+                <li>⭐ Featured Collector of the Month</li>
+            </ul>
+
+        </section>
+
+        <section class="recent-activity">
+
+            <h2>Recent Activity</h2>
+
+            <article>
+                <p>Posted a new collection showcase.</p>
+            </article>
+
+            <article>
+                <p>Completed a trade with another collector.</p>
+            </article>
+
+            <article>
+                <p>Added a Super Treasure Hunt to collection.</p>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Wheel Deal Community</p>
+    </footer>
+
+    <!-- Delete Post Modal -->
+    <div class="modal fade" id="deletePostModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" style="background:var(--bg-card);border:1px solid var(--border);">
+          <div class="modal-header" style="border-bottom:1px solid var(--border);">
+            <h5 class="modal-title" style="color:var(--text-white);">Delete Post</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" style="color:var(--text-muted);">
+            Are you sure you want to delete this post? This action cannot be undone.
+          </div>
+          <div class="modal-footer" style="border-top:1px solid var(--border);">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background:var(--bg-card2);border:1px solid var(--border);color:var(--text-muted);">Cancel</button>
+            <button type="button" class="btn btn-danger" id="confirm-delete-btn" style="background:var(--red);border:none;">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>

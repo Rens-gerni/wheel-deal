@@ -1,0 +1,15 @@
+{
+  "users": [
+    {
+      "id": "232326bc-0764-4356-b25b-6e7d4424aaae",
+      "firstName": "Rens",
+      "lastName": "Leonen",
+      "username": "@renso",
+      "email": "rensleonen453@gmail.com",
+      "passwordHash": "$2a$12$vWvv6WmrrT8d9ns5xgYRy.lkH0yVWBj/PrFU6.F9jRXEKm3APUeZi",
+      "bio": "",
+      "createdAt": "2026-10-13T13:53:01.267Z"
+    }
+  ],
+  "posts": []
+}
